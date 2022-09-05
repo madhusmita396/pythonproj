@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+{% extends 'myapp/base.html'%}
+
+{% block body_block %}
+{% load static %}
+{% load social_share %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style1.css' %}?{% now 'U' %}">
+           
+    <div class="container_flex">
+        <div class="mx-auto">
+            <h1 class="text-center">{{quotes.qauthor}}</h1>
+            <p class="text-center fw-light">{{quotes.quote}} By {{quotes.qauthor}}</p>
+            <div class="flexbox_item">
+                <div class="quote-img">
+                    <img src="{{quotes.qimage.url}}" alt="">
+                </div>
+                <div class="quote-text">
+                    <h1>{{quotes.quote}}</h1> 
+                    <p><a href="#">{{quotes.qauthor}}</a></p>
+                </div>
+            </div>
+            <div>
+                {% for tag in quotes.tags.all %}
+                    <li><a href="{% url 'quotes:tag' tag.slug %}" class="btn btn-sm list-group-item list-group-item list-group-item-primary">{{tag.name}}</a></li>
+                {% endfor %}
+            </div>
+            
+            <p>
+
+            {% if user.is_authenticated %}
+            <li><a href="{% url 'quotes:update' quotes.id %}">Update</a></li>
+            <li><a href="{% url 'quotes:delete' quotes.id %}">Delete</a></li>
+            {% endif %}              
+
+            </p>
+
+            
+        </div>
+    </div>
+{% endblock %}

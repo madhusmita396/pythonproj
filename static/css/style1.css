@@ -1,0 +1,183 @@
+.container_flex1{
+  margin-top: 58px;
+  margin-bottom: 3px;
+  border: 5px blue solid;
+    margin-left: 12.5%;
+    width: 87%;
+    height: 100px;
+    display: flex;
+    justify-content:center ;
+    flex-wrap: wrap;
+    background: rgba(202, 202, 198, 0.5);
+}
+
+.container_flex1 h1{
+  color: blue;
+  font-weight: 500;
+  padding: 5px;
+  text-align: center;
+}
+
+.container_flex{
+  /* margin-top: 58px; */
+  padding: 3px;
+  border: 5px rgb(227, 243, 9) solid;
+    margin-left: 12.5%;
+    width: 87%;
+    display: flex;
+    justify-content:center ;
+    flex-wrap: wrap;
+    background: rgba(247, 247, 183,0.5);
+}
+
+
+
+.flexbox_item{
+    margin: 10px;
+    /* width: 340px; */
+    position: relative;
+    background: rgb(247, 243, 243);
+    
+    transition: 0.02s;
+
+}
+.flexbox_item:hover{
+    box-shadow: 3.9px 7.8px 7.8px hsl(0deg 0% 0% /0.38);
+}
+.quote-img img{
+    
+    padding: 5px;
+    width: 100%;
+    border-radius: 10px ;
+    background: linear-gradient(to top,rgba(0,0,0,0.85),transparent);
+}
+
+.quote-text {
+    /* justify-content: center; */
+    text-align: center; 
+    
+    margin-bottom: 5px;
+    position: absolute;
+}
+/* .quote-text h1{
+       
+    
+    width: 95%;
+    font-size: 17px;
+    font-style: oblique;
+    color: white;
+    padding: 3px;
+    font-weight: bold;
+    bottom: 15px;
+    margin-top: -55%;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    background:rgba(88, 87, 87,0.6);
+} */
+
+.quote-text h1{
+    width: 100%;
+    
+    padding: 3px;
+    margin-top: -65%;
+    font: 800 20px Arial;
+    -webkit-text-fill-color: white;
+    -webkit-text-stroke: 1px;
+    background:rgba(167, 165, 165, 0.5);
+}
+
+.quote-text p{
+    text-align: center;
+}
+.quote-text p a{
+   color: rgb(221, 210, 210);
+   padding: 5px;
+   font-size: 15px;
+   font-weight: bold;
+   -webkit-text-fill-color:white;
+   -webkit-text-stroke: 1px;
+   -webkit-text-stroke-color:black;
+  text-decoration: none;
+  
+    
+}
+.quote-social {
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.quote-social button{
+    width: 70px;
+    background: black;
+    color: white;
+    border-radius: 15px;
+
+
+}
+.quote-social button:hover{
+   background-color: white;
+   color: black;
+   border: 2px solid black;
+    
+
+}
+
+
+/* Style all font awesome icons */
+.fa {
+    padding-top: 5px;
+  font-size: 30px;
+  width: 40px;
+  height: 30px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+  margin: 5px;
+  }
+  
+  /* Add a hover effect if you want */
+  .fa:hover {
+    opacity: 0.7;
+  }
+  
+  /* Set a specific color for each brand */
+  
+  /* Facebook */
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  .fa-whatsapp {
+    background: rgb(90, 207, 90);
+    color: white;
+  }
+  
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+
+  .fa-instagram {
+    background: #125688;
+    color: white;
+  }
+  
+  .fa-pinterest {
+    background: #cb2027;
+    color: white;
+  }
+
+
+@media screen and (max-width: 768px) {
+    .container_flex {
+      flex-direction: column-reverse;
+    }
+      quote-text p{
+        font-size: 15px;
+      }
+    
+   
+
+  }

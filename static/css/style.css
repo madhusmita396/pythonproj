@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+.sidebar{
+    position: fixed;
+    left: 0;
+    width: 12%;    
+    background: #0672df;
+    height: 100%;
+}
+.sidebar ul li a{
+    display: block;
+    color: white;
+    line-height:  25px;
+    padding-left: 7px; 
+
+}
+
+
+
+
+
+
+ 
+  @media screen and (max-width: 800px) {
+    .column {
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    .column {
+      flex: 100%;
+      max-width: 100%;
+    }
+    
+    .sidebar ul li a{
+      font-size: 10px;
+    }
+  } 
